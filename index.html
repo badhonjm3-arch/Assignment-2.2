@@ -1,13 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignnment-2</title>
-</head>
-<body>
-    <h1>This is heading tag</h1>
-    <h2>This is h2 tag</h2>
-    
-</body>
+
+    <link rel="stylesheet" href="style.css" />
+    <!-- fontawsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="container flex header__container">
+        <a href="index.html" class="logo">
+          <h2>Tech<span class="logo__highlight">Wave</span></h2>
+        </a>
+        <nav class="navbar ">
+          <ul class="navbar__list flex">
+            <li><a href="#home" class="navbar__link">About</a></li>
+            <li><a href="#about" class="navbar__link">Episods</a></li>
+            <li><a href="#services" class="navbar__link">Host</a></li>
+          </ul>
+        </nav>
+        <button id="menu-btn" class="menu-btn">
+          Subscribe<i class="fa-solid space fa-arrow-up-right-from-square"></i>
+        </button>
+        <img src="assets/hamburger-menu.png" alt="" class="hide">
+      </div>
+      <hr>
+    </header>
+    <!-- header end -->
+     <!-- hero-bg -->
+    <section class="hero-bg container" id="home">
+      <div class="hero-bg__container">
+        <div class="circle"><img src="assets/hero-circle.png" alt=""></div>
+        <div class="new"><span>new</span></div>
+        <div class="mic"><img src="assets/microphone.png" alt=""></div>
+      </div>
+    </section>
+     <!-- hero-bg end-->
+  </body>
 </html>

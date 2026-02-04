@@ -1,0 +1,185 @@
+*{margin: 0;padding: 0;box-sizing: border-box;font-family: 'Plus Jakarta Sans', sans-serif;}
+body{
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #1A0B2E;
+  width: 100%;
+  color: #FFFFFF;
+}
+.container {
+  width: 90%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+.center{
+  text-align: center;
+}
+.flex{
+  display: flex;
+}
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* header */
+header{
+    background-color: #1A0B2E;  
+    padding: 20px 0;
+}
+.header__container{
+    justify-content: space-between;
+    align-items: center;
+}
+.header__container a{
+    text-decoration: none;
+}
+.logo h2{
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+.logo__highlight{
+    background: linear-gradient(180deg, #6462fc 31%, #f8371a 82%);
+color: transparent;
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+text-fill-color: transparent;
+}
+.navbar__list a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-left: 40px;
+}
+.navbar__list{
+    list-style: none;
+}
+.menu-btn{
+        background: linear-gradient(180deg, #6462fc 31%, #f8371a 82%);
+        padding: 10px 20px;
+        border: none;
+        border-radius: 30px;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        color: #FFFFFF;
+        cursor: pointer;
+        transition: background 0.3s ease-in-out;
+}
+.menu-btn:hover{
+    background: linear-gradient(180deg, #f8371a 31%, #6462fc 82%);
+}
+.menu-btn .space{
+    margin-left: 10px;
+}
+.header, hr{
+    border: 0;
+    margin-top: 20px;
+    height: 1px;
+    background: linear-gradient(181deg, #f8371a -13%, #6462fc 76%);
+}
+.header__container .hide{
+    display: none;
+}
+
+
+/* header end */
+
+/* hero-bg */
+.hero-bg .hero-bg__container{
+    background-image: url(assets/hero-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 0;
+    height: 600px;
+    width: 100%;
+    max-width: 1440px;
+    justify-content: space-between;
+    position: absolute;
+}
+.hero-bg__container .circle img{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    left: 35%;
+}
+.hero-bg__container .new span{
+    background-color: #00FF88;
+    color: #1A0B2E;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    padding: 8px 20px;
+    position: relative;
+    top: -349px;
+    left: 56%;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+hero-bg__container .mic img{
+    position: relative;
+    top: -335px;
+    left: 44%;
+    width: 130px;
+
+}
+/* hero-bg end */
+
+/* responsive */
+@media screen and (max-width: 576px){
+.logo h2{
+    font-size: 30px;
+}
+.header__container nav button{
+    display: none;
+}
+.hero-bg .hero-bg__container{
+    background-image: url(assets/hero-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+    height: 300px;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+}
+.hero-bg__container .circle img{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: 35%;
+}
+.hero-bg__container .new span{
+    background-color: #00FF88;
+    color: #1A0B2E;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    padding: 8px 20px;
+    position: relative;
+    top: -349px;
+    left: 56%;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+hero-bg__container .mic img{
+    position: relative;
+    top: -335px;
+    left: 44%;
+    width: 130px;
+
+}
+}
